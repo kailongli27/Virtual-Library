@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>The Library Project</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <div id='page_header'>
+
+        <h1 id='top_title'>The Library Project</h1>
+
+        <p><i><small>"So many books, so little time..." - Frank Zappa</small></i></p>
+
+        <button type="button" class="open-button">Add Book</button>
+
+        <div class="dropdown">
+            <button type = "button" class="dropbtn">Sort by</button>
+            <div class="dropdown-content">
+                <button id="sortP">Number of pages</button>
+                <button id="sortT">Book title</button>
+                <button id="sortF">First name of author</button>
+                <button id="sortL">Last name of author</button>
+            </div>
+        </div>    
+
+    </div>
+
+    <div class="form-popup" id="myForm">
+
+        <form class="form-container">
+            
+            <label for="title"><b>Title</b></label>
+            <input type="text" id="form_title" placeholder="eg. The Hunger Games" name="title"/>
+            
+            <label for="author"><b>Author</b></label>
+            <input type="text" id="form_author" placeholder="eg. Suzanne Collins" name="author"/>
+
+            <label for="pages"><b>Number of pages</b></label>
+            <input type="text" id="form_pages" placeholder="eg. 374" name="pages"/>
+
+            <label for="status"><b>Status</b></label>
+            <select id="read_status" name="status">
+                <option value="read">Read</option>
+                <option value="not">Not read yet</option>
+            </select>
+
+            <button type="button" id="btn_add">Submit</button>
+            <button type="button" id="btn_cancel">Close</button>
+        
+        </form>
+
+    </div>
+
+    <div id='container'></div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
